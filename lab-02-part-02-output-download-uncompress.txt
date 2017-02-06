@@ -18,7 +18,7 @@ $ echo hello
 
 Copy and paste the output below.
 ----------
-
+hello
 
 
 ==========
@@ -28,8 +28,7 @@ $ echo hello there
 
 Copy and paste the output below.
 ----------
-
-
+hello there
 
 ==========
 3. Type:
@@ -38,7 +37,7 @@ $ echo good mornin'
 
 Copy and paste the output below.
 ----------
-
+good mornin’
 
 
 ==========
@@ -56,8 +55,7 @@ $ echo "good mornin'"
 
 Copy and paste the output below.
 ----------
-
-
+good mornin' 
 
 ==========
 6. There are some other symbols that have special meanings if you don't quote them.  For example, > brings up a different prompt.  Try *.
@@ -66,7 +64,7 @@ $ echo *
 
 What happens?
 ----------
-
+Adlm Adobe Applications Desktop Documents Downloads JenniferMenjivar_Ent3320 Library MPLABXProjects Movies Music New Unity Project Pictures Public Things ajax-test ipe.properties isus mtec1003 pymel.log rest-test stuff test.rb xgen
 
 
 ==========
@@ -74,7 +72,7 @@ What happens?
 
 Write the command that you used below:
 ----------
-
+clear
 
 
 ==========
@@ -87,8 +85,12 @@ $ curl google.com
 
 Copy and paste the output below.
 ----------
-
-
+<HTML><HEAD><meta http-equiv="content-type" content="text/html;charset=utf-8">
+<TITLE>301 Moved</TITLE></HEAD><BODY>
+<H1>301 Moved</H1>
+The document has moved
+<A HREF="http://www.google.com/">here</A>.
+</BODY></HTML>
 
 ==========
 9. And again.  This time, add www to the URL.
@@ -97,7 +99,7 @@ $ curl www.google.com
 
 Copy and paste the output below, but not the whole thing!  Just copy up to the part that has the title tags (<title>......</title>).
 ----------
-
+<!doctype html><html itemscope="" itemtype="http://schema.org/WebPage" lang="en"><head><meta content="Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for." name="description"><meta content="noodp" name="robots"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type"><meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"><title>Google</title>
 
 
 ==========
@@ -105,7 +107,11 @@ Copy and paste the output below, but not the whole thing!  Just copy up to the p
 
 Write the command you used below.  Also copy and paste the output below.
 ----------
+command: curl -o
 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 10105    0 10105    0     0   108k      0 --:--:-- --:--:-- --:--:--  112k
 
 
 ==========
@@ -113,7 +119,9 @@ Write the command you used below.  Also copy and paste the output below.
 
 Write the command you used to determine your directory.  Also, copy and paste the output below.
 ----------
+command: pwd
 
+/Users/student
 
 
 ==========
@@ -122,7 +130,7 @@ Write the command you used to determine your directory.  Also, copy and paste th
 Write the command that you used to change to your home directory.  If you were already in your home directory, write the command that you *would* have used to change to it!
 ----------
 
-
+cd ~
 
 ==========
 13. So... the lab materials are located at this url:
@@ -137,15 +145,18 @@ Use ls to verify that it downloaded.
 
 Write down the command that you used to download the file below.  Additionally, write the output of the command below.
 ----------
+command: curl -o mtec1002-lab-02.zip http://foureyes.github.io/mtec1002-spring2014/labs/02/mtec1002-lab-02.zip
 
-
+output:  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100  935k  100  935k    0     0  3519k      0 --:--:-- --:--:-- --:--:-- 3654k
 
 ==========
 14. We learned a command to uncompress a .zip file.  Use it to extract the files and folders from the file you just downloaded.
 
 Write down the command that you used to uncompress the file.
 ----------
-
+unzip mtec1002-lab-02.zip
 
 
 ==========
@@ -153,7 +164,7 @@ Write down the command that you used to uncompress the file.
 
 Copy and paste the output below.
 ----------
-
+books	logs	  	web
 
 
 ==========
@@ -164,7 +175,13 @@ We're going to mess around with archiving and compressing files.  We'll make a d
 
 Copy and paste the output below.
 ----------
-
+Adlm				Library				Things				mtec1002-lab-02.zip
+Adobe				MPLABXProjects			__MACOSX			mtec1003
+Applications			Movies				ajax-test			pymel.log
+Desktop				Music				google.html			rest-test
+Documents			New Unity Project		ipe.properties			stuff
+Downloads			Pictures			isus				test.rb
+JenniferMenjivar_Ent3320	Public				mtec1002-lab-02			xgen
 
 
 ==========
@@ -176,51 +193,53 @@ List the files in the directory you're currently in (which should be stuff).
 
 Copy and paste the output below.
 ----------
-
-
+hello.txt
+pwd
 
 ==========
 18. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
 
 $ tar -cvf stuff.tar stuff
 
-List the files in the directory you're currently in (which should be home).  
-
 Copy and paste the output below.
 ----------
-
+a stuff
+a stuff/hello.txt
 
 
 ==========
-19. Go up one directory back into your home directory.  Run the following commands exactly to create a compressed archive of the stuff folder.
-
-$ tar -cvf stuff.tar stuff
-
-Copy and paste the output below.
-----------
-
-
-
-==========
-20. List the files in the directory you're currently in (which should be home).  
+19. List the files in the directory you're currently in (which should be home).  
 
 Copy and paste the output below. (It should contain stuff.tar)
 ----------
-
+Adlm				MPLABXProjects			ajax-test			rest-test
+Adobe				Movies				google.html			stuff
+Applications			Music				ipe.properties			stuff.tar
+Desktop				New Unity Project		isus				test.rb
+Documents			Pictures			mtec1002-lab-02			xgen
+Downloads			Public				mtec1002-lab-02.zip
+JenniferMenjivar_Ent3320	Things				mtec1003
+Library				__MACOSX			pymel.log
 
 
 ==========
-21. Now compress it!  Type:
+20. Now compress it!  Type:
 
 gzip stuff.tar
 
 List your files again.... you should have a new file with a .gz extension.  Copy and paste the output of your this below.
 ----------
-
-
+Adlm				MPLABXProjects			ajax-test			rest-test
+Adobe				Movies				google.html			stuff
+Applications			Music				ipe.properties			stuff.tar.gz
+Desktop				New Unity Project		isus				test.rb
+Documents			Pictures			mtec1002-lab-02			xgen
+Downloads			Public				mtec1002-lab-02.zip
+JenniferMenjivar_Ent3320	Things				mtec1003
+Library				__MACOSX			pymel.log
 
 ==========
-22. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
+21. Move stuff.tar.gz into the lab directory that we downloaded.  We didn't learn this command yet, so just type in exactly as is:
 
 $ mv stuff.tar.gz mtec1002-lab-02 
 
@@ -230,27 +249,27 @@ Change your directory to mtec1002-lab-02.
 
 List the files.  Copy and paste the output below (stuff.tar.gz should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 ==========
-23. You should be in the lab directory.  Let's uncompress the file.
+22. You should be in the lab directory.  Let's uncompress the file.
 
 $ tar -xvf stuff.tar.gz
 
 List the files.  Copy and paste the output below (the folder, stuff, should be there).
 ----------
-
+books		logs		stuff.tar.gz	web
 
 
 ==========
-24. Go back to your home directory
+23. Go back to your home directory
 [No output]
 ----------
 
 
 
 ==========
-25. Download and uncompress this file using curl and tar -xvf in your home directory:
+24. Download and uncompress this file using curl and tar -xvf in your home directory:
 
 http://foureyes.github.io/mtec1002/labs/02/secret.tar.gz
 
@@ -262,5 +281,5 @@ Write out the commands that you used to do this.
 
 
 ==========
-26. How many files were in the archive.  What were their names?  Write out your answers below.
+25. How many files were in the archive.  What were their names?  Write out your answers below.
 ----------
